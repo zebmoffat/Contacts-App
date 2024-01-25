@@ -74,12 +74,19 @@ function ContactsList() {
     );
   }
 
+  function removeContact({object}) {
+    let newArray = contactsArray.filter(contact => contact !== object);
+    setContactsArray(newArray);
+    localStorage.setItem('contactsArray', JSON.stringify(newArray));
+  }
+
   function Contact({ object }) {
     return (
       <div className="fullContact">
         <div className="nameAndPic">
           <img src="images/contactIcon.png" className="contactImage" />
           <h3>{object.name}</h3>
+          <button className="removeButton" onClick={()=> removeContact({object})}>X</button>
         </div>
         <p>Phone number: {object.phoneNumber}</p>
         <p>Email: {object.email}</p>

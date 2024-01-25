@@ -47,7 +47,7 @@ Header Elements
 .left {
   margin-right: auto;
   font-size: 1.7rem;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .right {
@@ -114,7 +114,7 @@ End Header
 
 .fullContact {
   background-color: rgb(0, 139, 163);
-  coloR: #f1f1f1;
+  color: #f1f1f1;
   width: 20%;
   text-align: center;
   margin-left: 5%;
@@ -122,12 +122,22 @@ End Header
 }
 
 .form {
-  color: #FFFFFF;
+  color: #ffffff;
   position: fixed;
   background-color: rgb(14, 99, 184);
   margin-left: 85%;
   margin-top: 14%;
   border: 0.15rem solid #000;
+}
+
+.removeButton {
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+.removeButton:hover{
+  color: red;
 }
 
 .rightSpace {
@@ -163,5 +173,9 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* To style the scrollbar track when the scrollbar is in a "drag" state */
 body::-webkit-scrollbar-thumb:active {
-  background-color: rgb(159, 159, 159); /* Color of the thumb when active (dragged) */
+  background-color: rgb(
+    159,
+    159,
+    159
+  ); /* Color of the thumb when active (dragged) */
 }
